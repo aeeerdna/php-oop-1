@@ -34,6 +34,13 @@ metodi d'istanza che abbiamo visto stamattina e create un file index.php in cui:
         $this->genre = $_genre;
         $this->plot = $_plot;
     }
+
+    // add actor
+    public function addActor($_actor){
+        if(!in_array($_actor, $this->cast)){
+            $this->cast[] = $_actor;
+        }
+    }
  }
 
  ?>
